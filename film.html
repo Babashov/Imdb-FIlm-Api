@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MOVIE</title>
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Film</a>
+			</div>
+			
+		</div>
+		
+	</nav>
+
+	<!-- <div class="container">
+		<div class="jumbotron">
+			<h3 class="text-center">Film Axtarmaq</h3>
+			<form id="axtarmaq">
+				<input type="text" class="form-control" id="metnYazmaq" placeholder="Filmler Axtarmaq">
+			</form>
+			
+		</div>
+		
+	</div> -->
+
+	<div class="container">
+		<div id="film" class="yaxsi">
+
+
+			<div class="row">
+				<div class="col-md-4">
+				   <img src ="${film.Poster}" class="thumbnail">
+				</div>
+				<div class="col-md-8">
+				  <h2>${film.Title}</h2>
+					<ul class="list-group">
+						<li class="list-group-item"><strong>Genre:</strong>${film.Genre}</li>
+						<li class="list-group-item"><strong>Released:</strong>${film.Released}</li>
+						<li class="list-group-item"><strong>Rated:</strong>${film.Rated}</li>
+						<li class="list-group-item"><strong>IMDB Rating:</strong>${film.imdbRating}</li>
+						<li class="list-group-item"><strong>Director:</strong>${film.Director}</li>
+						<li class="list-group-item"><strong>Writer:</strong>${film.Writer}</li>
+						<li class="list-group-item"><strong>Actors:</strong>${film.Actors}</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="yaxsi">
+				   <h3>Plot</h3>
+				   ${film.Plot}
+
+				   <hr>
+				   <a href="http://imdb.com/title/${film.imdbID}" target="_blank" class="btn btn-primary">Bax IMDB
+				   </a>
+				   <a href="index.html" class="btn btn-default">Axtarışa Geri Dön</a>
+
+				</div>
+			</div>
+
+
+		</div>
+		
+	</div>
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+	
+</script>
+</body>
+</html>
